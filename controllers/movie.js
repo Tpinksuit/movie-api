@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { promisify } from 'util';
 import { v1 as uuid } from 'uuid';
-import { createAccessToken } from '../services.js';
+import { createAccessToken } from '../services/index.js';
 import { requiredKeys } from '../utils/requiredKeys.js';
 import { messages } from '../utils/messages.js';
 import { queryLimit } from '../utils/queryLimit.js';

@@ -1,4 +1,4 @@
-import { decodeAccessToken } from '../service.js';
+import { decodeAccessToken } from '../services/index.js';
 
 const auth = (req, res, next) => {
     if (!req.headers.authorization) return res.status(403).json({ status: 403, message: 'Forbidden' });
